@@ -17,7 +17,7 @@
                                 <br>
                                 <b-row class="justify-content-md-center">
                                     <b-col md="3">
-                                        <b-button>CARGAR ARCHIVO</b-button>
+                                        <b-button >CARGAR ARCHIVO</b-button>
                                     </b-col>
                                 </b-row>
                             </b-card>

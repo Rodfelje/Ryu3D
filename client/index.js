@@ -8,8 +8,8 @@ import "bootstrap-vue/dist/bootstrap-vue.css"
 Vue.use(BootstrapVue)
 
 new Vue({
-  el: '#app',
+  render: h => h(App),
   router,
   template:'<App/>',
   components: {App}
-})
+}).$mount('#app');
