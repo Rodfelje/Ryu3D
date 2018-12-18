@@ -15,7 +15,7 @@
                         <b-row>
                             <b-col>
                                 <b-form-group label="CATEGORIA1">
-                                    <b-form-checkbox-group stacked v-model="selected" name="flavour2" :options="options1">
+                                    <b-form-checkbox-group plain stacked  name="flavour2" :options="options1">
                                     </b-form-checkbox-group>
                                 </b-form-group>
                             </b-col>
@@ -24,13 +24,13 @@
                         <b-row>
                             <b-col>
                                 <b-form-group label="CATEGORIA2">
-                                    <b-form-checkbox-group stacked v-model="selected" name="flavour2" :options="options2">
+                                    <b-form-checkbox-group plain stacked  name="flavour2" :options="options2">
                                     </b-form-checkbox-group>
                                 </b-form-group>
                             </b-col>
                         </b-row>
                     </b-card>
-                    Selected: <strong>{{ selected }}</strong>
+                    
                 </b-col>
                 <b-col md="1"></b-col>
                 <b-col md="7">
@@ -117,7 +117,6 @@ export default {
     },
     data(){
         return {
-            selected: [],
             options1: [
                 {text: 'Art', value: 'art'},
                 {text: 'Fashion', value: 'fashion'},
