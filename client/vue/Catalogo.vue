@@ -109,7 +109,6 @@
 
 <script>
 import RyuNavBar from './NavBar.vue'
-
 export default {
     name: 'Catalogo',
     components: {
