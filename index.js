@@ -1,6 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
+const cors = require('cors')
 const app = express();
 
 mongoose.connect('mongodb://localhost/model-database')
@@ -8,9 +9,10 @@ mongoose.connect('mongodb://localhost/model-database')
 	.catch(err => console.error(err));
 
 // Settings
-app.set('port', 8080);
+app.set('port', 3000);
 
 // Middlewares
+app.use(cors())
 app.use(morgan('dev'));
 app.use(express.json());
 

@@ -9,11 +9,13 @@ router.get('/', async (req, res) => {
 });
 
 router.post('/', async (req, res) => {
+	console.log(req);
 	const product = new Product(req.body);
 	await product.save();
 	console.log(product);
 	res.json({
-		status: 'Product saved'
+		status: 'Product saved',
+		data: product
 	});
 });
 
